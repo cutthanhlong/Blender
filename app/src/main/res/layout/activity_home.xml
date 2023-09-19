@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app">
+    <include
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_create"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_home"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:padding="@dimen/dp12"
+                android:background="@drawable/bg_home_icon"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:src="@drawable/ic_add" />
+
+            <TextView
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                style="@style/TextViewBase"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="@string/create_new" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_my"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:orientation="vertical"
+            android:background="@drawable/bg_home"
+            android:layout_width="0dp"
+            android:layout_height="180dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:padding="@dimen/dp10"
+                android:background="@drawable/bg_home_icon"
+                android:src="@drawable/ic_love"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"/>
+            <TextView
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="@string/my_gallery"
+                style="@style/TextViewBase"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

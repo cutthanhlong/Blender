@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BB000000</color>
+    <color name="colorPrimary1">#BB000000</color>
+    <color name="colorPrimaryDark">#BB000000</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="error_color_material">#f22912</color>
+    <color name="white">#ffffff</color>
+    <color name="appcolor">#000000</color>
+    <color name="colorTextLibWhite">#ffffff</color>
+
+
+    <color name="ucrop_color_crop_background">#000</color>
+    <color name="ucrop_color_default_crop_frame">#ffffff</color>
+    <color name="ucrop_color_default_crop_grid">#80ffffff</color>
+    <color name="ucrop_color_default_dimmed">#2a2a2a</color>
+    <color name="ucrop_color_default_logo">#4f212121</color>
+    <color name="ucrop_color_default_logo_black">#2a2a2a</color>
+    <color name="ucrop_color_progress_wheel_line">#808080</color>
+    <color name="ucrop_color_statusbar">#181818</color>
+    <color name="ucrop_color_toolbar">#131313</color>
+    <color name="ucrop_color_toolbar_widget">#fff</color>
+    <color name="ucrop_color_widget">#000</color>
+    <color name="ucrop_color_widget_active">#4aa3c3</color>
+    <color name="ucrop_color_widget_background">#fff</color>
+    <color name="ucrop_color_widget_text">#000</color>
+
+    <color name="tarnpart">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="color_app">#EB6733</color>
+    <color name="color_text">#8F8F8F</color>
+    <color name="color_sp">#ED7C4F</color>
+    <color name="color_s1">#F1C7B5</color>
+    <color name="color_text_image">#5C5C5C</color>
+    <color name="color_tran">#00FFFFFF </color>
+    <color name="color_save">#FDEEE8 </color>
+
+
+</resources>

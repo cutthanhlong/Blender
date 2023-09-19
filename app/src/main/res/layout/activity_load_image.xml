@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.photo.blender.blendphoto.mixphotos.doubleexposure.code.activity.LoadImageActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_app"/>
+
+    <HorizontalScrollView
+        android:id="@+id/ll"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:letterSpacing="0.04"
+                style="@style/TextViewBaseToolbar"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_exit"
+                android:paddingVertical="@dimen/dp5"
+                android:paddingHorizontal="@dimen/dp16"
+                android:id="@+id/tv1"
+                android:layout_marginEnd="@dimen/dp20"
+                android:text="@string/all"
+                />
+            <TextView
+                android:textColor="#5C5C5C"
+                android:background="@drawable/bg_folder"
+                android:textSize="@dimen/sp14"
+                android:letterSpacing="0.04"
+                android:paddingVertical="@dimen/dp5"
+                android:paddingHorizontal="@dimen/dp16"
+                android:layout_marginEnd="@dimen/dp20"
+                android:id="@+id/tv4"
+                android:text="@string/camera"
+                style="@style/TextViewBaseToolbar"
+                />
+            <TextView
+                android:textColor="#5C5C5C"
+                android:background="@drawable/bg_folder"
+                android:textSize="@dimen/sp14"
+                android:letterSpacing="0.04"
+                android:paddingVertical="@dimen/dp5"
+                android:paddingHorizontal="@dimen/dp16"
+                android:layout_marginEnd="@dimen/dp20"
+                android:id="@+id/tv3"
+                android:text="@string/screenshots"
+                style="@style/TextViewBaseToolbar"
+                />
+            <TextView
+                android:textColor="#5C5C5C"
+                android:background="@drawable/bg_folder"
+                android:textSize="@dimen/sp14"
+                android:letterSpacing="0.04"
+                style="@style/TextViewBaseToolbar"
+                android:paddingVertical="@dimen/dp5"
+                android:paddingHorizontal="@dimen/dp16"
+                android:layout_marginEnd="@dimen/dp20"
+                android:id="@+id/tv2"
+                android:text="@string/downloads" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/dp20"
+        android:id="@+id/rcvListImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dp4"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll"
+        app:spanCount="4"
+        tools:listitem="@layout/item_gallery" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp20"
+        android:id="@+id/rcvListImg1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dp4"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll"
+        app:spanCount="4"
+        tools:listitem="@layout/item_gallery" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/layoutNoPics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/dp200"
+            android:layout_height="@dimen/dp200"
+            android:layout_gravity="center"
+            android:src="@drawable/no_img" />
+
+        <TextView
+            android:id="@+id/txt_nopics"
+            style="@style/TextViewBaseToolbar"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp16"
+            android:fontFamily="@font/lexend_regular"
+            android:text="@string/no_creation"
+            android:textColor="#5C5C5C"
+            android:textSize="@dimen/sp18" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

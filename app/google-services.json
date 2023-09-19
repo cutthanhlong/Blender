@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "142298890136",
+    "project_id": "photo-blender---blend-photo",
+    "storage_bucket": "photo-blender---blend-photo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142298890136:android:173c0aee57135cdaf7b5ed",
+        "android_client_info": {
+          "package_name": "com.photo.blender.blendphoto.mixer.mixphotos.doubleexposure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142298890136-jlofo72r610cemebbum15adf9i401jtk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7GPEDcSxvos2w10lL-BxwehjJjNtv6uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142298890136-jlofo72r610cemebbum15adf9i401jtk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

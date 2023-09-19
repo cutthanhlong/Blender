@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.photo.blender.blendphoto.mixphotos.doubleexposure.code.activity.AboutActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_app"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ig_splash"
+        android:layout_marginTop="@dimen/dp20"
+       app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_splash4"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textStyle="bold"
+        android:letterSpacing="0.04"
+        android:id="@+id/text"
+        android:textSize="45sp"
+        android:layout_marginTop="@dimen/dp20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ig_splash"
+        android:text="Photo"
+        style="@style/TextViewBaseToolbar"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textStyle="bold"
+        android:letterSpacing="0.04"
+        android:id="@+id/text2"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:text="Blender"
+        style="@style/TextViewBaseToolbar"/>
+    <TextView
+        android:id="@+id/version"
+        android:textColor="@color/color_text_image"
+        android:letterSpacing="0.03"
+        android:textSize="@dimen/sp14"
+        android:text="@string/version"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        style="@style/TextViewBaseToolbar"/>
+
+    <TextView
+        android:id="@+id/policy"
+        style="@style/TextViewBaseToolbar"
+        android:layout_marginTop="28dp"
+        android:letterSpacing="0.03"
+        android:text="@string/privacy"
+        android:textColor="#1A63E5"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/version" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
